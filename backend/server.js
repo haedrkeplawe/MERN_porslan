@@ -16,7 +16,7 @@ app.use("/uploads", express.static(__dirname + "/uploads"))
 
 mongoose
     .connect(
-        `${process.env.MONGO_URI}`
+        "mongodb+srv://alihassanhaedr:c4a@cluster0.ue5ezcc.mongodb.net/myporsalan?retryWrites=true&w=majority"
     )
     .then(() => {
         app.listen(port, () => {
